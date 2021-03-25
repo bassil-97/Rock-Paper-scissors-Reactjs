@@ -1,0 +1,5 @@
+#blue-circle:hover, #red-circle:hover, #yellow-circle:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 10px #000000;
+    transition-duration: .5s;
+}

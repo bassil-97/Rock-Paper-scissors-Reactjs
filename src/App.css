@@ -1,38 +1,84 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
+  padding: 26px;
+  min-height: 100vh;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.App .main-banner {
+  width: 50%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+}
+
+.App .main-banner .game-score-wrapper {
+  width: 20%;
+  padding: 10px;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #F0F3F4;
+}
+
+.App .main-banner .game-score-wrapper h1 {
+  font-size: 50px;
+  color: hsl(229, 25%, 31%);
+  font-weight: bold;
+}
+
+.App .main-banner .game-score-wrapper small {
+  color: hsl(229, 64%, 46%);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.App .rules-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  bottom: 0px;
+}
+
+.App #rules-btn {
+  width: 120px;
+  padding: 6px;
+  background-color: transparent;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  color: lightgray;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.App .game-body {
+  margin-top: 30px;
+  width: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 992px) {
+  .App .main-banner {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App .main-banner .game-score-wrapper {
+    width: 30%;
   }
 }

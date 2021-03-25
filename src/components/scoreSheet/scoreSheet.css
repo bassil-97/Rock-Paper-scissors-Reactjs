@@ -1,0 +1,28 @@
+.game-score-wrapper {
+    width: 20%;
+  padding: 10px;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #F0F3F4;
+}
+
+.game-score-wrapper h1 {
+    font-size: 50px;
+    color: hsl(229, 25%, 31%);
+    font-weight: bold;
+}
+
+.game-score-wrapper small {
+    color: hsl(229, 64%, 46%);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 992px) {
+   
+    .game-score-wrapper {
+      width: 30%;
+    }
+}
